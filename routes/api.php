@@ -13,6 +13,10 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::group(['middleware' => ['auth:api']], function (Illuminate\Routing\Router $router) {
+    $router->get('/user', function (Request $request) {
+        return $request->user();
+    });
+
+    $router->post('/project', App\Http\Controllers\Projects\StartProjectController::class);
 });
