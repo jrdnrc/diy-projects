@@ -25,9 +25,28 @@ class Project extends Model
     /**
      * @var array
      */
+    protected $visible = [
+        'id',
+        'user_id',
+        'name',
+        'created_at',
+        'updated_at',
+    ];
+
+    /**
+     * @var array
+     */
     protected $fillable = [
         'user_id',
         'name',
+    ];
+
+    /**
+     * @var array
+     */
+    protected $dates = [
+        'created_at',
+        'updated_at',
     ];
 
     /**
