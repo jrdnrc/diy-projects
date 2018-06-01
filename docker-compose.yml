@@ -39,13 +39,8 @@ services:
     env_file:
     - "./.env"
     environment:
-     - DB_HOST=readstore
+     - DB_HOST=db
      - DB_PORT=3306
-     - DB_HOST_EVENTSTORE=eventstore
-     - DB_PORT_EVENTSTORE=3306
-     - DB_USERNAME_EVENTSTORE=eventstore_user
-     - DB_DATABASE_EVENTSTORE=eventstore_db
-     - DB_PASSWORD_EVENTSTORE=db_password
      - MAIL_DRIVER=smtp
      - MAIL_HOST=mailhog
      - MAIL_PORT=1025
