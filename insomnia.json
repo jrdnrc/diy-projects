@@ -1,0 +1,232 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2018-06-01T20:42:59.468Z",
+	"__export_source": "insomnia.desktop.app:v5.16.6",
+	"resources": [
+		{
+			"_id": "wrk_4cdf0376686446ad857d6496b151ee6d",
+			"created": 1527881172986,
+			"description": "",
+			"modified": 1527882290850,
+			"name": "DIY Projects API",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_7a2eeca5356749de9db76af3de84f33a",
+			"color": null,
+			"created": 1527881173041,
+			"data": {},
+			"isPrivate": false,
+			"modified": 1527881173041,
+			"name": "New Environment",
+			"parentId": "wrk_4cdf0376686446ad857d6496b151ee6d",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_835c038ae6f043d39484dbb58a282689",
+			"cookies": [],
+			"created": 1527881173118,
+			"modified": 1527881173118,
+			"name": "Default Jar",
+			"parentId": "wrk_4cdf0376686446ad857d6496b151ee6d",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "fld_156c6b071f6c427f8be9bec335d9e9cd",
+			"created": 1527882269252,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1527882269252,
+			"modified": 1527882269252,
+			"name": "Authentication",
+			"parentId": "wrk_4cdf0376686446ad857d6496b151ee6d",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_8667ad15e7d74d59bcff792e749d82d2",
+			"created": 1527882872181,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1527882872181,
+			"modified": 1527882872181,
+			"name": "Project",
+			"parentId": "wrk_4cdf0376686446ad857d6496b151ee6d",
+			"_type": "request_group"
+		},
+		{
+			"_id": "env_f0e5d8f05c484c60ad9cb31b55b8d0a4",
+			"color": null,
+			"created": 1527882315613,
+			"data": {},
+			"isPrivate": false,
+			"modified": 1527882319858,
+			"name": "Local",
+			"parentId": "env_7a2eeca5356749de9db76af3de84f33a",
+			"_type": "environment"
+		},
+		{
+			"_id": "req_b33ad28387ff45378f1fc23aa2f530a8",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"client_id\": 1,\n\t\"client_secret\": \"Bmw30mzUABZGaqSM5UzfiVgZkuVEuwaBW2HOEQZ9\",\n\t\"grant_type\": \"password\",\n\t\"scope\": \"\",\n\t\"username\": \"jordan@jcrocker.uk\",\n\t\"password\": \"abcd1234\"\n}"
+			},
+			"created": 1527881207945,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_5b47754eb4e7437b91c63bfc09790949",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"id": "pair_9483f8ca69314d86b9f5190ad725107f",
+					"name": "Accept",
+					"value": "text/json"
+				},
+				{
+					"id": "pair_0435893ce109447ea5b70064bbe64511",
+					"name": "",
+					"value": ""
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1527881207945,
+			"method": "POST",
+			"modified": 1527883848625,
+			"name": "Request Token (Password)",
+			"parameters": [],
+			"parentId": "fld_156c6b071f6c427f8be9bec335d9e9cd",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "https://myapp.co/oauth/token",
+			"_type": "request"
+		},
+		{
+			"_id": "req_fdd9a68c9c4148409e63b25e6369a87a",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"client_id\": 2,\n\t\"client_secret\": \"uC14PhArqtTx2sWGEotr9As2t36FYajL14nGJVK8\",\n\t\"grant_type\": \"client_credentials\",\n\t\"scope\": \"\",\n\t\"username\": \"jordan@jcrocker.uk\",\n\t\"password\": \"abcd1234\"\n}"
+			},
+			"created": 1527883839521,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_5b47754eb4e7437b91c63bfc09790949",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"id": "pair_9483f8ca69314d86b9f5190ad725107f",
+					"name": "Accept",
+					"value": "text/json"
+				},
+				{
+					"id": "pair_0435893ce109447ea5b70064bbe64511",
+					"name": "",
+					"value": ""
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1527881207895,
+			"method": "POST",
+			"modified": 1527883891021,
+			"name": "Request Token (Client)",
+			"parameters": [],
+			"parentId": "fld_156c6b071f6c427f8be9bec335d9e9cd",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "https://myapp.co/oauth/token",
+			"_type": "request"
+		},
+		{
+			"_id": "req_670850e4e0b14ef19150e842f1b519ea",
+			"authentication": {
+				"token": "{% response 'body', 'req_b33ad28387ff45378f1fc23aa2f530a8', '$.access_token' %}",
+				"type": "bearer"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"name\": \"Garden Hose\"\n}"
+			},
+			"created": 1527882880421,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_b93697f781d44effbe3399d237af578a",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"id": "pair_e89da73fc84f43b8b9ca02e0328e25ef",
+					"name": "Accept",
+					"value": "text/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1527882880421,
+			"method": "POST",
+			"modified": 1527883317914,
+			"name": "Create Project",
+			"parameters": [],
+			"parentId": "fld_8667ad15e7d74d59bcff792e749d82d2",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "https://myapp.co/project",
+			"_type": "request"
+		},
+		{
+			"_id": "req_7de49b8ca2a3411ca7f724b8b8e54b92",
+			"authentication": {
+				"disabled": false,
+				"token": "{% response 'body', 'req_fdd9a68c9c4148409e63b25e6369a87a', '$.access_token' %}",
+				"type": "bearer"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"name\": \"Garden Hose\"\n}"
+			},
+			"created": 1527883538412,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_b93697f781d44effbe3399d237af578a",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"disabled": false,
+					"id": "pair_e89da73fc84f43b8b9ca02e0328e25ef",
+					"name": "Accept",
+					"value": "text/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1527882044183,
+			"method": "GET",
+			"modified": 1527884163987,
+			"name": "List Projects",
+			"parameters": [],
+			"parentId": "fld_8667ad15e7d74d59bcff792e749d82d2",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "https://myapp.co/projects",
+			"_type": "request"
+		}
+	]
+}
