@@ -19,4 +19,5 @@ Route::group(['middleware' => ['auth:api']], function (Illuminate\Routing\Router
     });
 
     $router->post('/project', App\Http\Controllers\Projects\StartProjectController::class);
+    $router->get('/projects', App\Http\Controllers\Projects\ListProjectsController::class);
 });
